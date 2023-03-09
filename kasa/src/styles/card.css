@@ -1,0 +1,55 @@
+.img-card {
+    object-fit: cover;
+    border-radius: 1em;
+    position: absolute;
+    height: 100%;
+    width:  340px;
+            
+
+}
+
+.Card {
+    display: flex;
+    position: relative;
+    width: 340px;
+    height: 340px;
+    margin: 2em;
+    padding: 0em;
+    justify-content: flex-start;
+    align-items: flex-end;
+    border-radius: 1em;
+    
+}
+
+.ContainerCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 1em;
+    gap: 1em;
+    background-color: #F6F6F6;
+}
+
+
+
+
+.Card .cardOverlay {
+    height: 100%;
+    width: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1em;
+    z-index: 2;
+    background: linear-gradient(#ffffff00 40%, #000000c0  );
+}
+
+.CardTitle {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 20px;
+    margin: 2em 2em 1.5em 1em ;
+    z-index: 4;
+    text-align: left;
+}

@@ -1,4 +1,4 @@
-[
+const locationList = [
     {
         "id": "c67ab8a7",
         "title": "Appartement cosy",
@@ -29,6 +29,7 @@
             "Montmartre"
         ]
     },
+
     {
         "id": "b9123946",
         "title": "Magnifique appartement proche Canal Saint Martin",
@@ -617,3 +618,5 @@
         ]
     }
 ]
+ 
+export default locationList

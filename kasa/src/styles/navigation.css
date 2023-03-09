@@ -1,0 +1,25 @@
+.pos-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    padding:1em 2em 1em 2em ;
+}
+
+.App-logo{
+    width: 10em;
+}
+nav{
+    display: flex;
+    gap: 1em;
+   
+}
+
+a{
+  text-decoration: none;
+    color: #ff6060;  
+}
+
+a:active{
+    text-decoration: underline;
+}

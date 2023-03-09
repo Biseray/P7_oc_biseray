@@ -1,17 +1,17 @@
 // import banniere from "../asset/photo-de-failse.png";
 import "../styles/banner.css";
 
-function Banner() {
+export default function Banner() {
     return (
         <div className="ks-banner">
             <div className="overlay">
-
-            </div>
-            {/* <img src={banniere} className="ks-banner_mg" alt="logo" /> */}
+             </div>    
+                     <p className="overlay-txt">Chez vous, partout et ailleurs </p>  
+            
         </div>
     )
 }
 
 
-export default Banner;
+
 

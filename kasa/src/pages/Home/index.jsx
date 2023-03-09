@@ -1,17 +1,18 @@
-
+import Banner from "../../componants/Banner";
 import React from "react";
+import CardList from "../../componants/CardList";
 
 export default function Home() {
   return (
     <div className="Home">
    
-      <header className="Home-header">
-
-        <p>
-         test
-        </p>
+       
+      <main>
+        <Banner />
+         <CardList />
       
-      </header>
+    </main>
+    
     </div>
   );
 }
