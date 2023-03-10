@@ -3,8 +3,8 @@
     border-radius: 1em;
     position: absolute;
     height: 100%;
-    width:  340px;
-            
+    width: 340px;
+
 
 }
 
@@ -13,21 +13,24 @@
     position: relative;
     width: 340px;
     height: 340px;
-    margin: 2em;
+    margin: 1em;
     padding: 0em;
     justify-content: flex-start;
     align-items: flex-end;
     border-radius: 1em;
-    
+
 }
 
 .ContainerCards {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: wrap;
     border-radius: 1em;
+    padding: 2em;
     gap: 1em;
     background-color: #F6F6F6;
+    margin: 3em 0em 3em 0em;
+
 }
 
 
@@ -36,20 +39,47 @@
 .Card .cardOverlay {
     height: 100%;
     width: 100%;
-    
+
     position: absolute;
     top: 0;
     left: 0;
     border-radius: 1em;
     z-index: 2;
-    background: linear-gradient(#ffffff00 40%, #000000c0  );
+    background: linear-gradient(#ffffff00 40%, #000000c0);
 }
 
 .CardTitle {
     color: rgb(255, 255, 255);
     position: absolute;
     font-size: 20px;
-    margin: 2em 2em 1.5em 1em ;
+    margin: 2em 2em 1.5em 1em;
     z-index: 4;
     text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+    .ContainerCards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        border-radius: 3em;
+        gap: 0;
+
+        
+        background-color: #ffffff;
+        margin: 0em;
+    padding: 0em;
+
+    }
+
+    .Card {
+        width: 340px;
+        height: 255px;
+
+    }
+
+    .img-card {
+        width: 340px;
+
+    }
 }

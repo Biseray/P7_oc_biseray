@@ -1,0 +1,21 @@
+footer {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.ks-footerLogo{
+    width: 10em;
+    text-align: center;
+}
+
+.txt-footer{
+    padding: 2em 0em 0em 0em;
+}
+.pos-img{
+    padding: 1em 0em 0em 0em;
+}

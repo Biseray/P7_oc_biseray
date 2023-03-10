@@ -6,12 +6,13 @@ export default function CardList() {
     return (
         <div className="ContainerCards">
             {locationList.map(({ id, title, cover }) => 
-                <div key={id}>
+               
                     <Card
+                        key={id}
                         cover={cover}
                         title={title}
                     />
-                </div> 
+               
            )}
     </div>
 )

@@ -4,17 +4,20 @@ import FicheDetail from "./pages/FicheDetail/index";
 import Apropos from "./pages/apropos/index";
 import "./index.css"
 import Navigation from "./componants/Navigation";
+import Footer from "./componants/Footer"
 
 function App() {
     return (
         <div className="App">
-            <Navigation />
-          
+           <Navigation />
+           
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/FicheDetail" element={<FicheDetail />} />
                 <Route path="/apropos" element={<Apropos />} />
             </Routes>
+
+            <Footer />
         </div>
     );
 }
