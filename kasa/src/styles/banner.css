@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 1em;
+
 }
 
 
@@ -28,10 +29,8 @@
 
 
 .overlay-txt {
-    color: rgb(255, 255, 255);
     position: relative;
     font-size: 44px;
-    position: relative;
     z-index: 4;
 }
 
@@ -55,10 +54,9 @@
 
     .overlay-txt {
 
-        color: rgb(255, 255, 255);
         position: relative;
         font-size: 22px;
-        margin: 2em 6.5em 2em 1em;
+        margin: 2em 5em 2em 1em;
         text-align: left;
         z-index: 4;
         line-height: 1.1;

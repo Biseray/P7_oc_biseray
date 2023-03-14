@@ -6,6 +6,8 @@ import "./index.css"
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer"
 
+import Error404 from "./pages/error404/index";
+
 function App() {
     return (
         <div className="App">
@@ -15,6 +17,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/FicheDetail" element={<FicheDetail />} />
                 <Route path="/apropos" element={<Apropos />} />
+                <Route path="/*" element={<Error404 />} />
             </Routes>
 
             <Footer />

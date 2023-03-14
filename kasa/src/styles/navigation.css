@@ -1,39 +1,36 @@
-
-
-
-.pos-header{
+.pos-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
-    padding:1em 2em 1em 2em ;
+
+    padding: 1em 2em 1em 2em;
     margin: 2em 8em 0em 8em;
 }
 
-.App-logo{
+.App-logo {
     width: 10em;
 }
-nav{
+
+nav {
     display: flex;
     gap: 1em;
-   
-}
 
-a{
-  text-decoration: none;
-    color: #ff6060;  
 }
-
-a:active{
-    text-decoration: underline;
-}
-
 
 @media screen and (max-width: 767px) {
     .pos-header {
-           
-    
-            padding: 0em;
-            margin: 1em;
-        }
+
+
+        padding: 0em;
+        margin: 1em;
+    }
+
+        .pos-header a {
+        text-transform: uppercase;
+        font-size: 0.9em;
+    }
+
+    .App-logo {
+        width: 8em;
+    }
 }
