@@ -3,8 +3,8 @@ import Home from "./pages/Home/index";
 import FicheDetail from "./pages/FicheDetail/index";
 import Apropos from "./pages/apropos/index";
 import "./index.css"
-import Navigation from "./componants/Navigation";
-import Footer from "./componants/Footer"
+import Navigation from "./components/Navigation";
+import Footer from "./components/Footer"
 
 function App() {
     return (

@@ -1,10 +1,13 @@
+
+
+
 .pos-header{
     display: flex;
     align-items: center;
     justify-content: space-between;
    
     padding:1em 2em 1em 2em ;
-    margin: 1em;
+    margin: 2em 8em 0em 8em;
 }
 
 .App-logo{

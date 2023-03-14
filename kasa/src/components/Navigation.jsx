@@ -3,6 +3,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/navigation.css"
 
+
+// const StyledLink = styled(Link)`
+//     color:${colors.primary}`
+
+
 export default function Navigation() {
     return (
         <header className='pos-header'>

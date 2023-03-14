@@ -1,6 +1,6 @@
-import Banner from "../../componants/Banner";
+import Banner from "../../components/Banner";
 import React from "react";
-import CardList from "../../componants/CardList";
+import CardList from "../../components/CardList";
 
 export default function Home() {
   return (

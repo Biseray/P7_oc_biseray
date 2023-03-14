@@ -64,11 +64,9 @@
         flex-wrap: wrap;
         border-radius: 3em;
         gap: 0;
-
-        
         background-color: #ffffff;
-        margin: 0em;
-    padding: 0em;
+        margin: 0em 0em 2em 0em;
+        padding: 0em;
 
     }
 
