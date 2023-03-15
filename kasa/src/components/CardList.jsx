@@ -1,11 +1,11 @@
-import  locationList  from '../datas/logements.js'
+
 import "../styles/card.css"
 import Card from './card'
  
-export default function CardList() {
+export default function CardList({locations}) {
     return (
         <div className="ContainerCards">
-            {locationList.map(({ id, title, cover }) => 
+            {locations.map(({ id, title, cover }) => 
                
                     <Card
                         key={id}

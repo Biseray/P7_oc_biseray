@@ -1,20 +1,25 @@
 import Banner from "../../components/Banner";
 import React from "react";
 import CardList from "../../components/CardList";
-
+import BannerBackground from "../../asset/photo-de-failse.png"
+import { useLoaderData } from "react-router";
+import  locationList  from '../../datas/logements.js'
 export default function Home() {
+
+  const locations = useLoaderData();
   return (
     <div className="Home">
    
-       
-      <main>
-        <Banner />
-         <CardList />
+        <Banner img={BannerBackground} title='Chez vous, partout et ailleurs' />
+         <CardList locations={locations} />
       
-    </main>
+ 
     
     </div>
   );
 }
 
 
+export function locationsLoader() {
+  return locationList;
+};

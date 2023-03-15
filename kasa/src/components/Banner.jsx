@@ -1,19 +1,16 @@
 // import banniere from "../asset/photo-de-failse.png";
-import "../styles/banner.css";
-import styled from 'styled-components'
-import colors from '../colors'
+import style from "../styles/Banner.module.css";
 
-const OverlayTxt = styled.p`
-    color: ${colors.secondary};
-    text-decoration: none; 
-`
 
-export default function Banner() {
+
+
+export default function Banner({img,title}) {
     return (
-        <div className="ks-banner">
-            <div className="overlay">
+        <div className={style.ks_banner}>
+            <div className={style.orvelay}>
+                <img src={img} alt="" />
              </div>    
-                     <OverlayTxt className="overlay-txt">Chez vous, partout et ailleurs </OverlayTxt>  
+            <h1 className={style.overlay_txt}> {title}</h1>  
             
         </div>
     )

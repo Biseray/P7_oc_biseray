@@ -7,7 +7,7 @@ export default function FicheDetail() {
       <header className="FicheDetail-header">
 
         <p>
-         fihce details des 
+         sdjfhsdkfhslfjsdklfjsdfjkslfsf
         </p>
       
       </header>

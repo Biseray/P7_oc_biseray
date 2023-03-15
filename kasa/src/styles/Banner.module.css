@@ -1,9 +1,9 @@
-.ks-banner {
+.ks_banner {
     display: flex;
     margin: 1em;
     width: 100%;
     height: 200px;
-    background-image: url("../asset/photo-de-failse.png");
+
     background-size: cover;
     background-position: center;
     position: relative;
@@ -15,7 +15,7 @@
 
 
 
-.ks-banner .overlay {
+.ks_banner .overlay {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.411);
@@ -28,7 +28,7 @@
 
 
 
-.overlay-txt {
+.overlay_txt {
     position: relative;
     font-size: 44px;
     z-index: 4;
@@ -36,7 +36,7 @@
 
 
 @media screen and (max-width: 767px) {
-    .ks-banner {
+    .ks_banner {
         display: flex;
         margin: 1em 0em 0.4em 0em;
         width: 90%;
@@ -52,7 +52,7 @@
     }
 
 
-    .overlay-txt {
+    .overlay_txt {
 
         position: relative;
         font-size: 22px;

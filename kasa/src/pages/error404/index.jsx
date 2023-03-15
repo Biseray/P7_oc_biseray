@@ -7,24 +7,41 @@ const StyledLink = styled(Link)`
     color: ${colors.primary};
     text-decoration: underline; 
     font-size: 20px;
-    padding-bottom: 2em;  
+    padding-bottom: 2em;
+    
+      @media screen and (max-width: 767px) {
+        font-size: 16px;
+        margin-bottom:12em;
+      }
+   
 `
 const StyledTxt = styled.div`
     color: ${colors.primary};
     text-decoration: none; 
     font-size: 40px;
     padding: 0em  0em 4em 0em;
+
+      @media screen and (max-width: 767px) {
+      font-size: 22px;
+     
+    }
 `
 const StyledTxt404 = styled.div`
     color: ${colors.primary};
     text-decoration: none;
-    font-size: 12em
+    font-size: 12em;
+     @media screen and (max-width: 767px) {
+      font-size: 7em;
+     
+    }
 `
 
 const StyledPos = styled.div`
     color: ${colors.primary};
-    padding: 2em; 
-    margin-bottom:4em  
+    margin:5em 5em 5em 5em;  
+       @media screen and (max-width: 767px) {
+       margin:7em 1em 1em 1em;  
+    }
 `
 
 
