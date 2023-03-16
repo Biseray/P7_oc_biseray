@@ -14,7 +14,8 @@ footer {
     text-align: center;
 }
 
-.txt-footer {
+footer p {
+    font-size: 1.1em;
     padding: 2em 0em 0em 0em;
 }
 

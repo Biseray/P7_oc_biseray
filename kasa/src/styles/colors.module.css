@@ -1,0 +1,14 @@
+:root {
+    --primaire-color: #ffffff;
+    --secondaire-color: #FF6060;
+    --tertiaire-color: #F6F6F6;
+}
+
+.primary_Color{
+    color: var(--primaire-color);
+}
+
+.secondary_Color{
+    color: var(--secondaire-color);
+}
+

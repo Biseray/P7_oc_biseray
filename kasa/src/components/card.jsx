@@ -1,22 +1,16 @@
-
-import "../styles/card.css"
-import styled from 'styled-components'
-import colors from '../colors'
-
-const TitleTxt = styled.div`
-    color: ${colors.secondary};
-    
-`
+import React from "react";
+import "../styles/card.css";
+import colors from "../styles/colors.module.css"
 
 export default function Card({ id, title, cover}) {
   return (
     
       <div className="Card" key={id} >
           <div className="cardOverlay"></div> 
-      <img className="img-card" src={cover} alt={title} />
-      <TitleTxt className="CardTitle">
+      <img className="img-card " src={cover} alt={title} />
+      <h2 className={` CardTitle , ${colors.primary_Color} `} >
         {title}
-      </TitleTxt>
+      </h2>
     </div>
   );
 }

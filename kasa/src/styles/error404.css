@@ -1,4 +1,65 @@
-.pos-error{
+.pos-error {
     padding: 2em;
 }
 
+.txtError {
+
+    
+    font-size: 44px;
+    padding-bottom: 6em;
+    margin: 1em 1em 0.3em 1em;
+}
+
+
+
+
+.Txt404 {
+    text-decoration: none;
+    font-size: 20em;
+    margin: 0.2em 1em 0em 1em;
+
+}
+
+
+
+
+.tete a  {
+    
+    font-size: 2em;
+    
+}
+
+.tete {
+    margin: 0em 0em 30vh 0em;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+
+    .linkHome {
+        font-size: 16px;
+        margin-bottom: 10em;
+    }
+
+  
+.Txt404 {
+    text-decoration: none;
+    font-size: 8em;
+    margin: 1em 1em 0em 1em;
+
+}
+ .txtError {
+
+
+     font-size: 20px;
+     padding-bottom: 6em;
+     margin: 1em 1.8em 0.3em 1.8em;
+ }
+ .tete a {
+
+     font-size: 0.9em;
+
+ }
+}

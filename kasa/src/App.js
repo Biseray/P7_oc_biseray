@@ -1,10 +1,10 @@
 import React from "react";
 
-import { Routes, Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from "react-router-dom";
+import {  Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from "react-router-dom";
 import Home, {locationsLoader} from "./pages/Home/index";
 import FicheDetail from "./pages/FicheDetail/index";
 import Apropos from "./pages/apropos/index";
-import "./index.css"
+import "./index.css";
 
 import Error404 from "./pages/error404/index";
 import BaseLayout from "./components/BaseLayout";
@@ -24,17 +24,7 @@ function App() {
        
 
 
-        // <div className="App">
-        //    <Navigation />
-           
-        //     <Routes>
-        //         <Route path="/" element={<Home />} />
-        //         <Route path="/FicheDetail" element={<FicheDetail />} />
-        //         <Route path="/apropos" element={<Apropos />} />
-        //         <Route path="/*" element={<Error404 />} />
-        //     </Routes>
-        //     <Footer />
-        // </div>
+     
     )
 }
 

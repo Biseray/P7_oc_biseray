@@ -16,6 +16,11 @@ nav {
     gap: 1em;
 
 }
+nav a {
+    text-decoration: none;
+    font-size: 1.3em;
+    
+}
 
 @media screen and (max-width: 767px) {
     .pos-header {

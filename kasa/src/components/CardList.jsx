@@ -1,6 +1,6 @@
-
+import React from "react";
 import "../styles/card.css"
-import Card from './card'
+import Card from './card';
  
 export default function CardList({locations}) {
     return (

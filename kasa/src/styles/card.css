@@ -45,13 +45,13 @@
     left: 0;
     border-radius: 1em;
     z-index: 2;
-    background: linear-gradient(#ffffff00 65%, #000000d7);
+    background: linear-gradient(#ffffff00 60%, #000000d7);
 }
 
 .CardTitle {
-    
     position: absolute;
     font-size: 20px;
+    font-weight: 200;
     margin: 2em 5em 1.5em 1em;
     z-index: 4;
     text-align: left;
@@ -81,12 +81,12 @@
 
     }
 
-        .CardTitle {
-    
-            position: absolute;
-            font-size: 19px;
-            margin: 2em 5em 1.5em 1em;
-            z-index: 4;
-            text-align: left;
-        }
+    .CardTitle {
+
+        position: absolute;
+        font-size: 19px;
+        margin: 2em 5em 1.5em 1em;
+        z-index: 4;
+        text-align: left;
+    }
 }

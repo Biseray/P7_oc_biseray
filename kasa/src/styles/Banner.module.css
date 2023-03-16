@@ -1,15 +1,22 @@
 .ks_banner {
     display: flex;
-    margin: 1em;
     width: 100%;
     height: 200px;
-
-    background-size: cover;
-    background-position: center;
     position: relative;
-    justify-content: center;
-    align-items: center;
+    gap: 0em;
+
+}
+
+
+
+.img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    display: flex;
     border-radius: 1em;
+
 
 }
 
@@ -18,7 +25,8 @@
 .ks_banner .overlay {
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.411);
+    z-index: 3;
+    background-color: rgba(0, 0, 0, 0.315);
     position: absolute;
     top: 0;
     left: 0;
@@ -28,37 +36,53 @@
 
 
 
-.overlay_txt {
-    position: relative;
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 0;
+
+}
+
+
+.overlay h1 {
     font-size: 44px;
-    z-index: 4;
+    z-index: 5;
+
+
 }
 
 
 @media screen and (max-width: 767px) {
+
     .ks_banner {
         display: flex;
-        margin: 1em 0em 0.4em 0em;
         width: 90%;
         height: 120px;
-        background-image: url("../asset/photo-de-failse.png");
-        background-size: cover;
-        background-position: center;
         position: relative;
-        justify-content: flex-start;
-        align-items: center;
-        border-radius: 1em;
+        gap: 0em;
+        margin: auto;
 
     }
 
+    .img {
+        object-fit: cover;
+        width: 100%;
+        height: 120px;
+        position: absolute;
+        display: flex;
+        border-radius: 1em;
 
-    .overlay_txt {
 
-        position: relative;
-        font-size: 22px;
-        margin: 2em 5em 2em 1em;
+    }
+
+    .overlay h1 {
+        font-size: 20px;
+        z-index: 5;
+        font-weight: 300;
+        margin: 1em 8.5em 1em 1em;
         text-align: left;
-        z-index: 4;
-        line-height: 1.1;
+
     }
 }
