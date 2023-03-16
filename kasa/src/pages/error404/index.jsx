@@ -12,7 +12,7 @@ export default function error404() {
       <Navigation />
       <div className="tete">
         <main>
-          <div className={colors.secondary_Color}> 
+          <div className="pos-error"> 
             <div className="Txt404">404</div>
             <div className="txtError" > Oups! La page que vous demandez n'existe pas </div>
             <Link to="/" className={colors.secondary_Color}>Retourner sur la page d'accueil</Link>

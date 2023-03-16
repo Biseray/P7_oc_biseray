@@ -3,7 +3,7 @@ import React from "react";
 import {  Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from "react-router-dom";
 import Home, {locationsLoader} from "./pages/Home/index";
 import FicheDetail from "./pages/FicheDetail/index";
-import Apropos from "./pages/apropos/index";
+import Apropos, { kasaInfo } from "./pages/apropos/index";
 import "./index.css";
 
 import Error404 from "./pages/error404/index";
@@ -13,7 +13,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path="/" element={ <BaseLayout/> } errorElement={<Error404 />}> 
         <Route index element={<Home />} loader={locationsLoader} />
         <Route path="fichedetail" element={<FicheDetail />} />
-        <Route path="apropos" element={<Apropos />} />
+        <Route path="apropos" element={<Apropos/>} loader={kasaInfo}  />
     </Route>
 )) 
 

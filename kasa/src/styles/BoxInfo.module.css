@@ -1,0 +1,72 @@
+.titleBoxInfo {
+    color: var(--primaire-color);
+    position: relative;
+    text-align: left;
+    
+    width: 100%;
+    font-size: 1em;
+    background-color: var(--secondaire-color);
+    border-radius: 0.3em;
+    z-index:3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}
+
+.description{
+    text-align: left;
+    border-radius: 1em 1em 0em 0em;
+    margin-top: -1em;   
+    padding:2em 1em 1em 1em ;
+}
+
+.descriptionBoxInfo{
+    color: var(--secondaire-color);
+    font-size: 1em;
+    position: relative;
+    background-color:var(--tertiaire-color); 
+    width: 100%;
+    z-index: 1;
+    transition: all ease-in 10s;
+    
+}
+.box{
+    margin-top: 1em ;
+    margin-bottom: 1em;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.posBoxInfo {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+   
+    margin: auto;
+}
+.title{
+    margin:0.3em;
+    text-align: left;
+    font-size: 1.2em;
+    font-weight: 200;
+    padding: 0em 1em 0em 1em;
+
+}
+
+.descriptionBoxInfo:hover    {
+display: none;
+
+}
+
+
