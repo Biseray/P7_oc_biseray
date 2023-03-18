@@ -12,7 +12,7 @@ import BaseLayout from "./components/BaseLayout";
 const router = createBrowserRouter(createRoutesFromElements(
     <Route path="/" element={ <BaseLayout/> } errorElement={<Error404 />}> 
         <Route index element={<Home />} loader={locationsLoader} />
-        <Route path="fichedetail" element={<FicheDetail />} />
+        <Route path="fichedetail/:id" element={<FicheDetail />} />
         <Route path="apropos" element={<Apropos/>} loader={kasaInfo}  />
     </Route>
 )) 

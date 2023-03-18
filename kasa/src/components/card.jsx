@@ -1,6 +1,8 @@
 import React from "react";
 import "../styles/card.css";
+
 import colors from "../styles/colors.module.css"
+
 
 export default function Card({ id, title, cover}) {
   return (
@@ -11,7 +13,8 @@ export default function Card({ id, title, cover}) {
       <h2 className={` CardTitle , ${colors.primary_Color} `} >
         {title}
       </h2>
-    </div>
+      </div>
+  
   );
 }
 

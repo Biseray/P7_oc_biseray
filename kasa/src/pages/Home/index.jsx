@@ -10,6 +10,8 @@ import locationList from '../../datas/logements.js';
 export default function Home() {
 
   const locations = useLoaderData();
+
+ 
   return (
     <div className="Home">
    

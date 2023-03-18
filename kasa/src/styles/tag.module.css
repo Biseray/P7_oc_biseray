@@ -1,0 +1,17 @@
+.tag {
+   
+    margin: 0;
+    
+    padding: 0.5em;
+    border-radius: 1em;
+    color: var(--primaire-color);
+    background-color: var(--secondaire-color);
+}
+
+.NameTag{
+    margin: 0em 1em 0em 1em;
+    display: flex;
+    gap: 1em;
+    
+}
+

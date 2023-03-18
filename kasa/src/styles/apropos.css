@@ -1,4 +1,4 @@
-.apropos{
+.apropos {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -6,12 +6,13 @@
     align-items: center;
 }
 
-.posBoxInfo{
+.posBoxInfo {
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     position: relative;
     align-items: center;
-    margin:auto;
+    margin: auto;
+
 }

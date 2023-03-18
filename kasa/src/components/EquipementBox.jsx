@@ -1,11 +1,10 @@
 import React from "react";
-// import FontAwesomeIcon from "https://kit.fontawesome.com/4bd8063d4c.js"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons'
 import style from "../styles/BoxInfo.module.css"
 import { useState } from "react";
 
-export default function BoxInfo({ id, title, description }) {
+export default function EquipementBox({ id, title, equipements }) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
@@ -15,11 +14,19 @@ export default function BoxInfo({ id, title, description }) {
                 <FontAwesomeIcon
                     className={style.btn}  icon={isOpen ? faAngleUp : faAngleDown} onClick={() => setIsOpen(!isOpen)}/>
             </div>
-            {isOpen && (
+            {isOpen  && (
                 <div className={style.descriptionBoxInfo}>
-                    <p className={style.description}>{description}</p>
+                    <ul className={style.ulStyle}>
+                        {equipements.map((equipement, index) => (
+                            
+                                <li key={index}>
+                                {equipement} 
+                                </li>
+                         
+                        ))}
+                       </ul>
                 </div>
             )}
         </div>
     );
-}
+} 
