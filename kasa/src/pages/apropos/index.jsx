@@ -13,18 +13,21 @@ export default function APropos() {
   const InfoApopros = useLoaderData();
   return (
     <div className="apropos">
-   
-  
-      <Banner img={BannerBackground} title='' />
+      <div className="BoxBanner">
+        <Banner img={BannerBackground} title='' />
+      </div>
+
+
+
       <div className="posBoxInfo">
-        <BoxListApropos  InfoApopros={InfoApopros} />
-       
+        <BoxListApropos InfoApopros={InfoApopros} />
+
       </div>
 
     </div>
   );
 }
 
-export function kasaInfo(){
+export function kasaInfo() {
   return kasaInfos;
 };

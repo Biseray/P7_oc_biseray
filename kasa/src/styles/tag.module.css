@@ -2,16 +2,21 @@
    
     margin: 0;
     
-    padding: 0.5em;
-    border-radius: 1em;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    border-radius: 10px;
     color: var(--primaire-color);
     background-color: var(--secondaire-color);
 }
 
 .NameTag{
-    margin: 0em 1em 0em 1em;
+    margin: 1em 0em 0em 0em;
     display: flex;
     gap: 1em;
     
 }
 
+ @media screen and (max-width: 767px) {
+  .tag{
+    font-size: 15px;
+  }
+ }

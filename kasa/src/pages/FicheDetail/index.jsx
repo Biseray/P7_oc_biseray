@@ -8,7 +8,7 @@ import TagBox from "../../components/TagBox";
 import BoxInfo from "../../components/BoxInfo";
 import "../../styles/fichedetail.css"
 import locationList from "../../datas/logements";
-
+import Rating from "../../components/Rating";
 
 
 
@@ -42,18 +42,22 @@ export default function FicheDetail() {
           <div className="posTag"><TagBox tags={dataLocation.tags } />   </div>
           
         </div>
-        <div className="posCartProfil">
+        <div className="posDirection">
+          <div className="posCartProfil">
           <div className="profil">
             <p className="name"> {dataLocation.host.name}</p>
             <img className="profilImg" src={dataLocation.host.picture} alt={dataLocation.host.name} />
 
           </div>
-          <div>{dataLocation.rating}</div>
+       
+        </div>
+       
+           <Rating  hostRate={dataLocation.rating}/>
         </div>
       </div>
       <div className="posBoxI">
-        <BoxInfo title={"description"} description={dataLocation.description} />
-        <EquipementBox title={"equipments"} equipements={dataLocation.equipments} />
+        <BoxInfo title={"Description"} description={dataLocation.description} />
+        <EquipementBox title={"Équipements"} equipements={dataLocation.equipments} />
       </div>
     </div>
   );

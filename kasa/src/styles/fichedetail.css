@@ -6,18 +6,27 @@
     align-items: flex-start;
 }
 
+
+.posDirection{
+ display: flex;
+ flex-direction: column;
+align-items: flex-end
+}
 .FicheDetail {
     width: 100%;
-    
+
 }
 
 .profilImg {
     border-radius: 10em;
     width: 5em;
+    height: auto;
+    margin-left: 0.5em;
 }
 
 .profil {
     display: flex;
+    align-items: center;
     color: var(--secondaire-color);
 }
 
@@ -32,6 +41,7 @@
 
 .posInfoLocation {
     display: flex;
+    margin: 1em 0em 0em 0em;
     justify-content: space-between;
 }
 
@@ -41,18 +51,23 @@
 }
 
 .name {
-    word-wrap: break-word;
+   width: min-content;
     margin: 2;
     text-align: right;
+    font-size: 1.3em;
 
 }
 
 .city {
-    margin: 0.5em;
+    font-weight: 100;
+    font-size: 1em;
+    margin: 0.5em 0em 0em 0em;
+
 }
 
 .NameLocation {
-    margin: 0.1em;
+    margin: 0;
+    font-size: 2em;
 
 }
 
@@ -75,18 +90,18 @@
 
 }
 
-.posFleche{
+.posFleche {
     display: flex;
     position: absolute;
-     justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
-    
+
 }
 
 .fleche {
     height: 4em;
-    
-   
+
+
 }
 
 /* .flecheLeft {
@@ -107,14 +122,72 @@
         height: 300px;
         align-items: center;
 } */
-.flecheLeft{
+.flecheLeft {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
-        width: 100%;
+    width: 100%;
     margin: 0;
 
 }
 
 
+
+
+@media screen and (max-width: 767px) {
+    .posBoxI {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 0em;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+
+    .posInfoLocation {
+        flex-direction: column;
+    }
+
+    .posDirection {
+        margin: 0.5em 1em 0.5em 1em;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .profilImg {
+        border-radius: 10em;
+        width: 3em;
+        height: 100%;
+        margin-left: 0.5em;
+    }
+
+    .locationInfo {
+        margin: 0em 1em 1em 1em;
+    }
+
+    .NameLocation {
+
+        font-size: 1.6em;
+        font-weight: 100;
+
+    }
+
+    .name {
+        word-wrap: break-word;
+        margin: 2;
+        text-align: right;
+        font-size: 1.1em;
+        font-weight: 100;
+
+    }
+
+    .city {
+        margin: 0.5em 0em 0em 0em;
+        font-size: 1.1em;
+        font-weight: 100;
+
+    }
+}

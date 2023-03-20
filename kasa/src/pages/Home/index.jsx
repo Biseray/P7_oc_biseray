@@ -5,6 +5,8 @@ import CardList from "../../components/CardList";
 import BannerBackground from "../../asset/photo-de-failse.png";
 import { useLoaderData } from "react-router";
 import locationList from '../../datas/logements.js';
+import "../../styles/home.css"
+
 
 
 export default function Home() {
@@ -15,7 +17,12 @@ export default function Home() {
   return (
     <div className="Home">
    
-        <Banner img={BannerBackground} title='Chez vous, partout et ailleurs' />
+    
+      <div className="BoxBanner">
+        
+       <Banner img={BannerBackground} title='Chez vous, partout et ailleurs' /> 
+      </div>
+        
         <CardList locations={locations} />
     </div>
   );
