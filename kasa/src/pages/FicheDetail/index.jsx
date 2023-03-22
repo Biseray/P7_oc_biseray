@@ -1,22 +1,23 @@
 import React from "react";
 
 import { useParams } from "react-router-dom";
-import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import EquipementBox from "../../components/EquipementBox"
 import TagBox from "../../components/TagBox";
 import BoxInfo from "../../components/BoxInfo";
 import "../../styles/fichedetail.css"
 import locationList from "../../datas/logements";
-import Rating from "../../components/Rating";
-
-
+// import Rating from "../../components/Rating";
+import { useLoaderData } from "react-router";
 
 export default function FicheDetail() {
- const { id } = useParams();
+  const { id } = useParams();
   
+  
+  const locationsInfo = useLoaderData();
 
- const dataLocation = locationList.find(location => location.id === id.toString());
+ const dataLocation = locationsInfo.find(location => location.id === id.toString());
    // const selectLocation 
  
   
@@ -27,7 +28,7 @@ export default function FicheDetail() {
         <div className="posFleche">
           
            
-          <div className="flecheLeft">   <FontAwesomeIcon className="fleche" icon={faAngleLeft} />  <FontAwesomeIcon className="fleche" icon={faAngleRight} /> </div>         
+          {/* <div className="flecheLeft">   <FontAwesomeIcon className="fleche" icon={faAngleLeft} />  <FontAwesomeIcon className="fleche" icon={faAngleRight} /> </div>          */}
           
             
         
@@ -47,12 +48,10 @@ export default function FicheDetail() {
           <div className="profil">
             <p className="name"> {dataLocation.host.name}</p>
             <img className="profilImg" src={dataLocation.host.picture} alt={dataLocation.host.name} />
-
           </div>
-       
         </div>
        
-           <Rating  hostRate={dataLocation.rating}/>
+           <div>{dataLocation.rating}</div>  
         </div>
       </div>
       <div className="posBoxI">
@@ -64,3 +63,6 @@ export default function FicheDetail() {
   
 }
 
+export function locationsLoader() {
+  return locationList;
+};

@@ -11,6 +11,7 @@
 .NameTag{
     margin: 1em 0em 0em 0em;
     display: flex;
+    flex-wrap: wrap;
     gap: 1em;
     
 }
