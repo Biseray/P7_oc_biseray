@@ -1,18 +1,20 @@
 import React from "react";
-import "../styles/card.css"
+import style from "../styles/card.module.css"
 import Card from './card';
- import { Link } from "react-router-dom";
+
 export default function CardList({locations}) {
     return (
-        <div className="ContainerCards">
+        <div className={style.ContainerCards}>
             {locations.map(({ id, title, cover }) => 
-                <Link to={`fichedetail/${id}`} key={id}>
-                    <Card
+                
+                      <Card
                         
+                        key={id}
+                        id={id}
                         cover={cover}
                         title={title}
                     />
-                </Link> 
+                
             )}
          
     </div>

@@ -1,9 +1,9 @@
-.img-card {
+.imgCard {
     object-fit: cover;
     border-radius: 1em;
     position: absolute;
     height: 100%;
-    width: 340px;
+    width: 20vw;
 
 
 }
@@ -11,9 +11,9 @@
 .Card {
     display: flex;
     position: relative;
-    width: 340px;
-    height: 340px;
-    margin: 1em;
+    width: 20vw;
+    height: 13vw;
+    margin: 2em;
     padding: 0em;
     justify-content: flex-start;
     align-items: flex-end;
@@ -22,17 +22,22 @@
 }
 
 .ContainerCards {
+  
+    
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+
     border-radius: 1em;
-    padding: 2em;
+    padding: 0em;
+    width: 100%;
     gap: 1em;
+    
     background-color: #F6F6F6;
-    margin: 3em 0em 3em 0em;
+    margin: 2em 0em 1em 0em ;
 
 }
-
 
 
 
@@ -55,6 +60,7 @@
     margin: 2em 5em 1.5em 1em;
     z-index: 4;
     text-align: left;
+    color: var(--primaire-color);
 }
 
 @media screen and (max-width: 767px) {
@@ -76,7 +82,7 @@
 
     }
 
-    .img-card {
+    .imgCard {
         width: 340px;
 
     }

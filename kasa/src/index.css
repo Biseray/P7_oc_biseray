@@ -4,7 +4,11 @@
     src: url("../src/font/Montserrat-Regular.ttf");
 }
 
-
+ :root {
+     --primaire-color: #ffffff;
+     --secondaire-color: #FF6060;
+     --tertiaire-color: #F6F6F6;
+ }
 
 
 
@@ -20,6 +24,7 @@ body {
 }
 
 main {
+    
     flex: 1;
 }
 
@@ -41,6 +46,9 @@ body {
 
 }
 
+nav a.active {
+    text-decoration: underline;
+}
 
 
 main {

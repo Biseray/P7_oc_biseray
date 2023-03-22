@@ -1,20 +1,20 @@
 import React from "react";
-import "../styles/card.css";
 
-import colors from "../styles/colors.module.css"
+import { Link } from "react-router-dom";
+import style from "../styles/card.module.css"
 
 
 export default function Card({ id, title, cover}) {
   return (
-    
-      <div className="Card" key={id} >
-          <div className="cardOverlay"></div> 
-      <img className="img-card " src={cover} alt={title} />
-      <h2 className={` CardTitle , ${colors.primary_Color} `} >
+    <Link to={`fichedetail/${id}`} >
+      <div className={style.Card} >
+        <div className={style.cardOverlay}></div> 
+      <img className={style.imgCard} src={cover} alt={title} />
+      <h2 className={style.CardTitle} >
         {title}
       </h2>
       </div>
-  
+  </Link>
   );
 }
 

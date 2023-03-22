@@ -1,34 +1,34 @@
 import React from "react";
 
-import { useParams } from "react-router-dom";
+
 // import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import EquipementBox from "../../components/EquipementBox"
+
 import TagBox from "../../components/TagBox";
 import BoxInfo from "../../components/BoxInfo";
-import "../../styles/fichedetail.css"
+import style from "../../styles/fichedetail.module.css"
 import locationList from "../../datas/logements";
 // import Rating from "../../components/Rating";
 import { useLoaderData } from "react-router";
-
+import { TabTitle } from "../../utiles/TabTitle";
 export default function FicheDetail() {
-  const { id } = useParams();
-  
-  
-  const locationsInfo = useLoaderData();
-
- const dataLocation = locationsInfo.find(location => location.id === id.toString());
-   // const selectLocation 
  
   
+  
+  const dataLocation = useLoaderData();
+
+ 
+   // const selectLocation 
+ 
+  TabTitle(`Kasa - ${dataLocation.title}`);
   return (
-    <div className="FicheDetail">
-      <div className="carrouselPicture">
-        <div><img  className="imgc" src={dataLocation.cover} alt="" /> </div>
-        <div className="posFleche">
+    <div className={style.FicheDetail}>
+    < div className = { style.carrouselPicture } >
+    <div>< img  className = { style.imgc } src={dataLocation.cover} alt="" /> </div>
+      <div className={style.posFleche}>
           
            
-          {/* <div className="flecheLeft">   <FontAwesomeIcon className="fleche" icon={faAngleLeft} />  <FontAwesomeIcon className="fleche" icon={faAngleRight} /> </div>          */}
+          {/* <div className={style.flecheLeft">   <FontAwesomeIcon className={style.fleche" icon={faAngleLeft} />  <FontAwesomeIcon className={style.fleche" icon={faAngleRight} /> </div>          */}
           
             
         
@@ -36,33 +36,35 @@ export default function FicheDetail() {
         </div>
       </div>
 
-      <div className="posInfoLocation">
-        <div className="locationInfo">
-          <h1 className="NameLocation"> {dataLocation.title}   </h1>
-          <h2 className="city">  {dataLocation.location}   </h2>
-          <div className="posTag"><TagBox tags={dataLocation.tags } />   </div>
+      <div className={style.posInfoLocation}>
+        <div className={style.locationInfo}>
+          <h1 className={style.NameLocation}> {dataLocation.title}   </h1>
+          <h2 className={style.city}>  {dataLocation.location}   </h2>
+          <div className={style.posTag}> <TagBox tags={dataLocation.tags } />   </div>
           
         </div>
-        <div className="posDirection">
-          <div className="posCartProfil">
-          <div className="profil">
-            <p className="name"> {dataLocation.host.name}</p>
-            <img className="profilImg" src={dataLocation.host.picture} alt={dataLocation.host.name} />
+        <div className={style.posDirection}>
+          <div className={style.posCartProfil}>
+          <div className={style.profil}>
+            <p className={style.name}> {dataLocation.host.name}</p>
+            <img className={style.profilImg} src={dataLocation.host.picture} alt={dataLocation.host.name} />
           </div>
         </div>
        
            <div>{dataLocation.rating}</div>  
         </div>
       </div>
-      <div className="posBoxI">
+      <div className={style.posBoxI}>
         <BoxInfo title={"Description"} description={dataLocation.description} />
-        <EquipementBox title={"Équipements"} equipements={dataLocation.equipments} />
+        <BoxInfo title={"Équipements"} equipements={dataLocation.equipments} />
       </div>
     </div>
   );
   
 }
 
-export function locationsLoader() {
-  return locationList;
+export function locationLoader({params}) {
+
+ return locationList.find(location => location.id === params.id);
+
 };
