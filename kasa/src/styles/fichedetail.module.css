@@ -75,9 +75,8 @@ align-items: flex-end
     position: relative;
     display: flex;
     width: 100%;
-    height: 300px;
-    gap: 0em;
-    align-items: flex-start
+    height: 400px;
+   
 }
 
 .imgc {
@@ -89,50 +88,6 @@ align-items: flex-end
     border-radius: 1em;
 
 }
-
-.posFleche {
-    display: flex;
-    position: absolute;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.fleche {
-    height: 4em;
-
-
-}
-
-/* .flecheLeft {
-    position: absolute;
- 
-    display: flex;
-    color: aliceblue;
-    height: 300px;
-    align-items: center;
-
-}
-
-.flecheRight {
-    position: absolute;
-        
-        display: flex;
-        color: aliceblue;
-        height: 300px;
-        align-items: center;
-} */
-.flecheLeft {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-
-}
-
-
 
 
 @media screen and (max-width: 767px) {

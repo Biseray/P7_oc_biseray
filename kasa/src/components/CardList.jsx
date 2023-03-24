@@ -18,5 +18,6 @@ export default function CardList({locations}) {
             )}
          
     </div>
-)
+    )
+    
 }

@@ -8,12 +8,15 @@
     background-color: var(--secondaire-color);
 }
 
-.NameTag{
+
+
+.containerTag{
+  display: flex ;
+  flex-wrap: wrap; 
+  gap: 1em;
     margin: 1em 0em 0em 0em;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1em;
-    
+  align-items: center;
+
 }
 
  @media screen and (max-width: 767px) {

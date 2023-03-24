@@ -1,4 +1,6 @@
-
+.posRating{
+    display: flex;
+}
 .ratingStars{
     display: flex;
     

@@ -1,17 +1,13 @@
 import React from "react";
-import style from "../../src/styles/tag.module.css"
+import style from "../styles/tag.module.css"
+import Tag from "./Tag"
 
-
-export default function tagBox({ tags }) {
-    return (
-        <div className={style.NameTag}>
-            
-                {tags.map((tag, index) => (
-                    <p  className={style.tag} key={index}>
-                        {tag} 
-                    </p>
-                ))}
-            
-        </div>
-    )
+export default function TagBox({ Tags }) {
+  return (
+    <div className={style.containerTag}>
+      {Tags.map((tags, index) => (
+        <Tag  key={index} text={tags} />
+      ))}
+    </div>
+  );
 }
