@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "../styles/carousel.module.css"
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,8 +8,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const  SliderShow = ({ allPictures }) =>  {
     
-  
+    const [picturesIndex, setPicturesIndex] = useState(0);
     
+    const handlePrevClick = () => {
+        setPicturesIndex((picturesIndex - 1 + allPictures.length) % allPictures.length);
+    }
+
+      const handleNextClick = () => {
+    setPicturesIndex((picturesIndex + 1) % allPictures.length);
+  };
+
     return (
         <div className="container">
 
@@ -21,48 +29,26 @@ const  SliderShow = ({ allPictures }) =>  {
 
 
                     <div className={style.flecheLeft}>
-                        <FontAwesomeIcon className={style.fleche} icon={faAngleLeft} />
+                        <FontAwesomeIcon className={style.fleche} icon={faAngleLeft} onClick={handlePrevClick} />
                     </div>
                     <div>
-                        <FontAwesomeIcon className={style.fleche} icon={faAngleRight} />
+                        <FontAwesomeIcon className={style.fleche} icon={faAngleRight} onClick={handleNextClick} />
                     </div>
                     
                 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    {allPictures.map((pictures, index) => (
-
-
                         <div className={style.ImgCarousel} >
-                            <button >
-
-                            </button>
-                            <img className={style.posCarousel} src={pictures} alt="" key={index} />
-
+                         
+                            <img className={style.posCarousel} src={allPictures[picturesIndex]} alt=""  />
+                                <div  className={style.numberSlide}>
+                    {picturesIndex + 1 }/ {allPictures.length}
+                    </div>
                         </div>
 
-
-                    ))}
+                
            
-            </div>
-            <button className={style.button} >
-                            
-                            </button>
+            </div>                        
+                           
         </div>
     )
 

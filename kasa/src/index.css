@@ -52,11 +52,14 @@ nav a.active {
 
 
 main {
+   width: 100%;
+    max-width: 1240px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin: 2em 10em 2em 10em;
+    margin: auto;
+    
 }
 
 

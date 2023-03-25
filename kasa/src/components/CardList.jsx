@@ -4,6 +4,7 @@ import Card from './card';
 
 export default function CardList({locations}) {
     return (
+        
         <div className={style.ContainerCards}>
             {locations.map(({ id, title, cover }) => 
                 

@@ -3,7 +3,7 @@
     border-radius: 1em;
     position: absolute;
     height: 100%;
-    width: 20vw;
+    width: 100%;
 
 
 }
@@ -11,13 +11,14 @@
 .Card {
     display: flex;
     position: relative;
-    width: 20vw;
-    height: 13vw;
-    margin: 2em;
+    width: 340px;
+    height: 340px;
+    margin: 0em;
     padding: 0em;
     justify-content: flex-start;
     align-items: flex-end;
     border-radius: 1em;
+
 
 }
 
@@ -28,15 +29,20 @@
     flex-direction: row;
     flex-wrap:wrap;
     justify-content: center;
-
-    border-radius: 1em; 
-    padding: 0em;
-    width: 100%;
     gap: 1em;
+    border-radius: 1em; 
+    padding-top: 2em;
+    width: 100%;
+    padding-bottom: 2em;
+ 
     
     background-color: #F6F6F6;
     margin: 2em 0em 1em 0em ;
 
+}
+
+.CardLink{
+    margin: 1em;
 }
 
 
@@ -69,7 +75,7 @@
         justify-content: center;
         flex-wrap: wrap;
         border-radius: 3em;
-        gap: 0;
+        gap: 1;
         background-color: #ffffff;
         margin: 0em 0em 2em 0em;
         padding: 0em;

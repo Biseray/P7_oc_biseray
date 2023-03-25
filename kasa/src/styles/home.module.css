@@ -14,7 +14,14 @@ display: flex;
 align-items: center;
 width: 100%;
 }
-
+.Home{
+width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
 @media screen and (max-width: 767px) {
     .BoxBanner {
         width: 90%;
