@@ -12,7 +12,7 @@ export default function Card({ id, title, cover}) {
         <div className={style.cardOverlay}></div> 
       <img className={style.imgCard} src={cover} alt={title} />
       <h2 className={style.CardTitle} >
-        {title}
+        {title} 
       </h2>
     
       </div>

@@ -6,26 +6,30 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 
-const  SliderShow = ({ allPictures }) =>  {
-    
+const Slider = ({ allPictures }) => {
+
     const [picturesIndex, setPicturesIndex] = useState(0);
-    
+
     const handlePrevClick = () => {
         setPicturesIndex((picturesIndex - 1 + allPictures.length) % allPictures.length);
     }
 
-      const handleNextClick = () => {
-    setPicturesIndex((picturesIndex + 1) % allPictures.length);
-  };
-
+    const handleNextClick = () => {
+        setPicturesIndex((picturesIndex + 1) % allPictures.length);
+    };
+     const handleSelectClick = (index) => {
+  setPicturesIndex(index);
+};
     return (
+
         <div className="container">
 
-            <div className={style.containerCarousel}>
-                  
-                
 
-                <div className={style.posFleche}> 
+            <div className={style.containerCarousel}>
+               
+
+
+                <div className={style.posFleche}>
 
 
                     <div className={style.flecheLeft}>
@@ -34,30 +38,37 @@ const  SliderShow = ({ allPictures }) =>  {
                     <div>
                         <FontAwesomeIcon className={style.fleche} icon={faAngleRight} onClick={handleNextClick} />
                     </div>
-                    
+
                 </div>
 
-                        <div className={style.ImgCarousel} >
-                         
-                            <img className={style.posCarousel} src={allPictures[picturesIndex]} alt=""  />
-                                <div  className={style.numberSlide}>
-                    {picturesIndex + 1 }/ {allPictures.length}
+                <div className={style.ImgCarousel} >
+                         <div className={style.dotPos}>
+                    {allPictures.map((picture, index) => (
+                        <div className={`${style.dot} ${
+                index === picturesIndex ? style.active : ""
+              }`} key={picture} onClick={() => handleSelectClick(index)} > </div>
+                    )
+                    )}
+                </div>
+                    <img className={style.posCarousel} src={allPictures[picturesIndex]} alt="" />
+                    <div className={style.numberSlide}>
+                        {picturesIndex + 1}/ {allPictures.length}
                     </div>
-                        </div>
+                </div>
 
-                
-           
-            </div>                        
-                           
+
+
+            </div>
+
         </div>
     )
 
 
 
- 
+
 
 
 
 }
 
-export default SliderShow;
+export default Slider;

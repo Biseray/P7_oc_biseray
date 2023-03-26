@@ -15,13 +15,13 @@ export default function error404() {
     <>
       <Navigation />
       
-        <main  className={style.tete}>
+        {/* <main  className={style.tete}> */}
           <div className={style.pos_error}> 
             <div className={style.Txt404}>404</div>
             <div className={style.TxtError} > Oups! La page que vous demandez n'existe pas </div>
             <Link to="/" className={style.link}>Retourner sur la page d'accueil</Link>
           </div>
-        </main>
+        {/* </main> */}
       
       <Footer />
 

@@ -11,6 +11,7 @@ import Rating from "../../components/Rating";
 import { useLoaderData } from "react-router";
 import { TabTitle } from "../../utiles/TabTitle";
 import SliderShow from "../../components/SliderShow"
+
 export default function FicheDetail() {
 
 
@@ -18,16 +19,11 @@ export default function FicheDetail() {
   const dataLocation = useLoaderData();
 
 
-  // const selectLocation 
 
   TabTitle(`Kasa - ${dataLocation.title}`);
   return (
     <div className={style.FicheDetail}>
-
-
-        <SliderShow allPictures={dataLocation.pictures} />
-
-    
+ <SliderShow allPictures={dataLocation.pictures} /> 
 
        
       
