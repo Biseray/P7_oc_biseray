@@ -54,7 +54,14 @@
     
 
 }
+@media screen and (max-width: 991px) {
+    .overlay .title {
+        font-size: 35px;
+        z-index: 5;
 
+
+    }
+}
 
 @media screen and (max-width: 767px) {
 
@@ -88,3 +95,6 @@
 
     }
 }
+
+
+

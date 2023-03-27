@@ -1,19 +1,19 @@
-.posCarousel{
+.posCarousel {
 
-object-fit: cover;
+    object-fit: cover;
     width: 100%;
     height: 600px;
     position: absolute;
     display: flex;
     border-radius: 1em;
     z-index: 1;
-    
-    
+
+
 }
 
-.containerCarousel{
+.containerCarousel {
 
-position: relative;
+    position: relative;
     display: flex;
     width: 100%;
     height: 600px;
@@ -21,9 +21,9 @@ position: relative;
 }
 
 
-.ImgCarousel{
-    display: flex; 
-    justify-content: center; 
+.ImgCarousel {
+    display: flex;
+    justify-content: center;
     align-items: center;
     position: absolute;
     top: 0;
@@ -56,45 +56,101 @@ position: relative;
 
 }
 
-.numberSlide{
+.numberSlide {
     z-index: 3;
     font-size: 1.2em;
-    color:var(--primaire-color);
+    color: var(--primaire-color);
     margin: 1em;
 }
 
-.dotPos{
+.dotPos {
     display: flex;
-
-margin: 1em;
-gap: 5px;
+    align-items: center;
+    margin: 1em;
+    gap: 5px;
 
 }
 
 .dot {
     z-index: 44;
     content: "";
-    height: 10px;
-    width: 10px;
+    height: 8px;
+    width: 8px;
     background-color: #ffffffc0;
     border-radius: 50%;
-    border: 2px solid rgba(0, 0, 0, 0.479);
+    border: 2px solid rgba(0, 0, 0, 0.678);
     display: inline-block;
     cursor: pointer;
 }
 
 
-.dot.active{
+.dot.active {
     z-index: 44;
-        content: "";
-        height: 10px;
-        width: 10px;
-  
-        border-radius: 50%;
+    content: "";
+    height: 10px;
+    width: 10px;
+
+    border-radius: 50%;
+
+    display: inline-block;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid var(--secondaire-color);
+    z-index: 44;
+}
+
+@media screen and (max-width: 991px) {
+    .numberSlide {
+        display: none;
+    }
+
+    .ImgCarousel {
+        justify-content: flex-end;
+        
+    }
+
+    .containerCarousel {
+
+
+        height: 400px;
+
+    }
+
+
+
+    .posCarousel {
+        height: 400px;
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .containerCarousel {
+        height: 250px;
+
+    }
+
+        .dotPos{
+            align-items: center;
+        }
+    .posCarousel {
+        height: 250px;
+
+    }
+
+
+
+    .dot {
     
-        display: inline-block;
-        cursor: pointer;
-    background-color: var(--secondaire-color);
-    border: 2px solid rgba(71, 71, 71, 0.822);
-    z-index: 44;
+        height: 5px;
+        width: 5px;
+        border: 1.5px solid rgba(0, 0, 0);
+    }
+
+    .dot.active {
+        height: 5px;
+        width: 5px;
+        border: 1.5px solid rgba(0, 0, 0);
+        background-color: var(--secondaire-color);
+    }
 }

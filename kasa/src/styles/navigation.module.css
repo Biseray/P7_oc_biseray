@@ -32,7 +32,7 @@
 @media screen and (max-width: 767px) {
     .pos_header {
 
-justify-content: space-around;
+justify-content: space-between;
         padding: 0em;
         margin-top: 1em;
         margin-bottom: 1em;
@@ -45,5 +45,12 @@ justify-content: space-around;
 
     .App_logo {
         width: 8em;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .pos_header {
+        width: 98%;
+        
     }
 }

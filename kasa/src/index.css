@@ -73,3 +73,11 @@ main {
     }
 
 }
+
+
+@media screen and (max-width: 991px) {
+    main{
+        width: 98%;
+        margin: auto;
+    }
+}

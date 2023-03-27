@@ -1,5 +1,6 @@
 .pos_error {
-    padding: 2em;
+    width: 100%;
+    /* padding: 2em; */
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -10,9 +11,11 @@
 .TxtError {
 
     color: var(--secondaire-color);
-    font-size: 44px;
+    font-size: 40px;
     padding-bottom: 6em;
-    margin: 1em 1em 0.3em 1em;
+    margin: auto;
+    margin-top: 1em;
+
 }
 
 
@@ -21,7 +24,8 @@
 .Txt404 {
     text-decoration: none;
     font-size: 20em;
-    margin: 0.2em 1em 0em 1em;
+    margin: auto;
+    /* margin: 0.2em 1em 0em 1em; */
 
 }
 
@@ -31,6 +35,8 @@
 .tete a  {
     
     font-size: 2em;
+    text-decoration: underline;
+    color: var(--secondaire-color);
     
 }
 
@@ -39,7 +45,25 @@
 }
 
 
+@media screen and (max-width: 991px) {
+.linkHome {
+        font-size: 16px;
+        margin-bottom: 10em;
+    }
 
+        .Txt404 {
+            text-decoration: none;
+            font-size: 15em;
+            margin: auto;
+            margin-top: 0.5em;
+    
+        }
+                 .tete a {
+        
+                     font-size: 1.4em;
+        
+                 }
+}
 
 @media screen and (max-width: 767px) {
 
@@ -52,19 +76,23 @@
 .Txt404 {
     text-decoration: none;
     font-size: 8em;
-    margin: 1em 1em 0em 1em;
+    margin: auto;
+    margin-top: 1em;
 
 }
  .txtError {
 
 
-     font-size: 20px;
+     font-size: 18px;
      padding-bottom: 6em;
-     margin: 1em 1.8em 0.3em 1.8em;
+     margin: 0em;
+     /* margin: 1em 1.8em 0.3em 1.8em; */
+
+   
  }
  .tete a {
 
-     font-size: 0.9em;
+     font-size: 1.1em;
 
  }
 }
