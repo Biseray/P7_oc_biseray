@@ -19,13 +19,16 @@ const Slider = ({ allPictures }) => {
     };
      const handleSelectClick = (index) => {
   setPicturesIndex(index);
-};
+    };
+    
+      
+
     return (
 
         <div className="container">
 
 
-            <div className={style.containerCarousel}>
+            <div className={style.containerCarousel} >
                
 
 
@@ -50,7 +53,8 @@ const Slider = ({ allPictures }) => {
                     )
                     )}
                 </div>
-                    <img className={style.posCarousel} src={allPictures[picturesIndex]} alt="" />
+                    <img className={style.posCarousel} 
+           src={allPictures[picturesIndex]} alt="" />
                     <div className={style.numberSlide}>
                         {picturesIndex + 1}/ {allPictures.length}
                     </div>

@@ -1,4 +1,4 @@
-.posCarousel {
+.posCarousel{
 
     object-fit: cover;
     width: 100%;
@@ -7,9 +7,18 @@
     display: flex;
     border-radius: 1em;
     z-index: 1;
+    transition: all 1s ease;
 
 
 }
+.posCarousel.active {
+
+  
+    transition: all 1s ease;
+
+
+}
+
 
 .containerCarousel {
 
@@ -32,7 +41,7 @@
     height: 100%;
     justify-content: space-between;
     flex-direction: column;
-
+    
 }
 
 
