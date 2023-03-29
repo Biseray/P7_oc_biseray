@@ -4,7 +4,7 @@ import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons';
 import style from "../styles/BoxInfo.module.css";
 import { useState } from "react";
 
-export default function BoxInfo({ title, description, equipements }) {
+export default function BoxInfo({ title, description }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -15,16 +15,12 @@ export default function BoxInfo({ title, description, equipements }) {
       </div>
       {isOpen && (
         <div className={style.descriptionBoxInfo}>
-          {description ? <p className={style.description}>{description}</p> : null}
-          {equipements ? (
-            <ul className={style.list}>
-              {equipements.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          ) : null}
+         <div className={style.description}>{description}</div> 
         </div>
       )}
     </div>
   );
 }
+
+
+

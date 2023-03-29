@@ -25,11 +25,9 @@
 .ContainerCards {
   
     
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    justify-content: center;
-    gap: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+justify-items: center;
     border-radius: 1em; 
     padding-top: 2em;
     width: 100%;

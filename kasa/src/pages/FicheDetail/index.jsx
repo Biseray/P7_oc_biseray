@@ -11,10 +11,22 @@ import Rating from "../../components/Rating";
 import { useLoaderData } from "react-router";
 import { TabTitle } from "../../utiles/TabTitle";
 import SliderShow from "../../components/SliderShow"
+import Carousel from "../../components/Carousel";
+  
+
 
 export default function FicheDetail() {
 
-
+    
+const equipement = (equipements) => {
+                return( <ul className={style.list}>
+              {equipements.map((equipement, index) => (
+                <li key={index}>{equipement}</li>
+              ))}
+            </ul>)
+    
+  
+}
 
   const dataLocation = useLoaderData();
 
@@ -25,7 +37,7 @@ export default function FicheDetail() {
     <div className={style.FicheDetail}>
  <SliderShow allPictures={dataLocation.pictures} /> 
 
-       
+<Carousel allPictures={dataLocation.pictures} /> 
       
 
       <div className={style.posInfoLocation}>
@@ -49,7 +61,7 @@ export default function FicheDetail() {
       </div>
       <div className={style.posBoxI}>
         <BoxInfo title={"Description"} description={dataLocation.description} />
-        <BoxInfo title={"Équipements"} equipements={dataLocation.equipments} />
+        <BoxInfo title={"Équipements"} description={equipement(dataLocation.equipments)} />
       </div>
     </div>
   );

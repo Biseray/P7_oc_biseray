@@ -17,19 +17,19 @@ const Slider = ({ allPictures }) => {
     const handleNextClick = () => {
         setPicturesIndex((picturesIndex + 1) % allPictures.length);
     };
-     const handleSelectClick = (index) => {
-  setPicturesIndex(index);
+    const handleSelectClick = (index) => {
+        setPicturesIndex(index);
     };
-    
-      
+
+
 
     return (
 
-        <div className="container">
+        <div >
 
 
-            <div className={style.containerCarousel} >
-               
+            <div className={style.containerCarousel}>
+
 
 
                 <div className={style.posFleche}>
@@ -45,22 +45,19 @@ const Slider = ({ allPictures }) => {
                 </div>
 
                 <div className={style.ImgCarousel} >
-                         <div className={style.dotPos}>
-                    {allPictures.map((picture, index) => (
-                        <div className={`${style.dot} ${
-                index === picturesIndex ? style.active : ""
-              }`} key={picture} onClick={() => handleSelectClick(index)} > </div>
-                    )
-                    )}
-                </div>
-                    <img className={style.posCarousel} 
-           src={allPictures[picturesIndex]} alt="" />
+                    <div className={style.dotPos}>
+                        {allPictures.map((picture, index) => (
+                            <div className={`${style.dot} ${index === picturesIndex ? style.active : ""
+                                }`} key={picture} onClick={() => handleSelectClick(index)} > </div>
+                        )
+                        )}
+                    </div>
+                    <img className={style.posCarousel}
+                        src={allPictures[picturesIndex]} alt="" />
                     <div className={style.numberSlide}>
                         {picturesIndex + 1}/ {allPictures.length}
                     </div>
                 </div>
-
-
 
             </div>
 

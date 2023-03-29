@@ -90,6 +90,22 @@ align-items: flex-end
 }
 
 
+
+.list {
+    text-align: left;
+    list-style: none;
+    margin: 0.5em;
+    padding: 0em;
+}
+
+
+
+.ulStyle {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 0.8em;
+}
+
 @media screen and (max-width: 767px) {
     .posBoxI {
         width: 100%;
@@ -99,7 +115,14 @@ align-items: flex-end
         align-items: center;
         margin-bottom: 1em;
     }
-
+        .ulStyle {
+            font-weight: 100;
+    
+            list-style-type: none;
+            text-align: left;
+            font-size: 15px;
+            line-height: 1.6;
+        }
     .posInfoLocation {
         flex-direction: column;
     }
