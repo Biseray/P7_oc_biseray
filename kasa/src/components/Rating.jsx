@@ -16,14 +16,11 @@ const Rating = ({ RatingStar }) => {
     const Empty = Array(5).fill(starVide);
     return (
 <div className={style.posRating}>
-    { fullStars.slice(5 - RatingStar).map(( fullStar,index ) => {
-        return (
-         <div key={index } className={style.ratingStars}>
-            <img  src={ fullStar} alt="" />
-            </div>
-        )
-    
-    })}
+    { fullStars.slice(5 - RatingStar).map(( fullStar,index ) => (
+        <div key={index} className={style.ratingStars}>
+            <img src={fullStar} alt="" />
+        </div>
+    ))}
             
     { Empty.slice(RatingStar).map((Empty ,index )=> {
                   return (

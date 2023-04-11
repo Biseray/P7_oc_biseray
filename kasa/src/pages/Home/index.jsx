@@ -22,7 +22,6 @@ export default function Home() {
         
        <Banner img={BannerBackground} title='Chez vous, partout et ailleurs' /> 
       </div>
-      
         <CardList locations={locations} />
      
         

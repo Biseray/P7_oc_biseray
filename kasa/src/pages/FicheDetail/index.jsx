@@ -1,8 +1,5 @@
 import React from "react";
 
-
-
-
 import TagBox from "../../components/TagBox";
 import BoxInfo from "../../components/BoxInfo";
 import style from "../../styles/fichedetail.module.css"
@@ -10,15 +7,14 @@ import locationList from "../../datas/logements";
 import Rating from "../../components/Rating";
 import { useLoaderData } from "react-router";
 import { TabTitle } from "../../utiles/TabTitle";
-import SliderShow from "../../components/SliderShow"
 import Carousel from "../../components/Carousel";
-  
+
 
 
 export default function FicheDetail() {
 
     
-const equipement = (equipements) => {
+const List = (equipements) => {
                 return( <ul className={style.list}>
               {equipements.map((equipement, index) => (
                 <li key={index}>{equipement}</li>
@@ -35,7 +31,7 @@ const equipement = (equipements) => {
   TabTitle(`Kasa - ${dataLocation.title}`);
   return (
     <div className={style.FicheDetail}>
- <SliderShow allPictures={dataLocation.pictures} /> 
+
 
 <Carousel allPictures={dataLocation.pictures} /> 
       
@@ -61,7 +57,7 @@ const equipement = (equipements) => {
       </div>
       <div className={style.posBoxI}>
         <BoxInfo title={"Description"} description={dataLocation.description} />
-        <BoxInfo title={"Équipements"} description={equipement(dataLocation.equipments)} />
+        <BoxInfo title={"Équipements"} description={List(dataLocation.equipments)} />
       </div>
     </div>
   );
