@@ -1,6 +1,6 @@
 import React from "react";
 
-import BoxInfo from './BoxInfo';
+import BoxInfo from '../components/boxinfo';
 import style from '../styles/BoxInfo.module.css'
  
 export default function boxInfoList({InfoApopros}) {
