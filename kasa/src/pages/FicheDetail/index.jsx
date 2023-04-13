@@ -1,7 +1,7 @@
 import React from "react";
 
 import TagBox from "../../components/TagBox";
-import BoxInfo from "../../components/BoxInfo";
+import BoxInfo from "../../components/boxinfo";
 import style from "../../styles/fichedetail.module.css"
 import locationList from "../../datas/logements";
 import Rating from "../../components/Rating";
