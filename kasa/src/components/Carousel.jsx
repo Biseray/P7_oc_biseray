@@ -31,7 +31,7 @@ export default function Carousel({ allPictures }) {
         }; setPicturesIndex(nextIndex)
     }
 
-    //selection d'une img précise 
+    //selection d'une image précise 
     const handleSelectClick = (index) => {
         setPicturesIndex(index)
     }
@@ -60,7 +60,6 @@ export default function Carousel({ allPictures }) {
             </div>
         </div>
     )
-
 
 }
 
