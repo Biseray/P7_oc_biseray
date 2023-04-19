@@ -13,7 +13,6 @@ export default function Navigation() {
             <img src={logo} className={style.App_logo} alt="logo" />
             <nav className={style.ks_navbar}>
             <NavLink  to="/" > Accueil </NavLink>
-            
             <NavLink to="/apropos" > A Propos </NavLink>
             </nav>
         </header>

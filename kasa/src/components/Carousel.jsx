@@ -10,26 +10,28 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Carousel({ allPictures }) {
     const [picturesIndex, setPicturesIndex] = useState(0)
 
-
+//click retour 
     const handlePrevClick = () => {
-        let prevIndex = picturesIndex - 1;
+        let prevIndex = picturesIndex -1;
         if (picturesIndex === 0) {
-            prevIndex = allPictures.length - 1;
+            prevIndex = allPictures.length -1;
 
         }
         setPicturesIndex(prevIndex);
     }
 
 
-
+//click suivant 
     const handleNextClick = () => {
 
         let nextIndex = picturesIndex + 1;
-        if (nextIndex > allPictures.length - 1) {
+        if (nextIndex > allPictures.length -1 ) {
             nextIndex = 0
 
         }; setPicturesIndex(nextIndex)
     }
+
+    //selection d'une image précise 
     const handleSelectClick = (index) => {
         setPicturesIndex(index)
     }
@@ -58,7 +60,6 @@ export default function Carousel({ allPictures }) {
             </div>
         </div>
     )
-
 
 }
 

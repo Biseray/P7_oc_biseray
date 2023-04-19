@@ -1,7 +1,7 @@
 import React from "react";
 import logoFooter from '../logoFooter.png'
 import style from "../styles/footer.module.css";
-// import styled from 'styled-components'
+
 
 
 
