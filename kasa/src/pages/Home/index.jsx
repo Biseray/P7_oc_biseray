@@ -18,7 +18,7 @@ export default function Home() {
     <div className={style.Home}>
    
     
-    < div className = { style.BoxBanner } >
+    < div className={ style.BoxBanner } >
         
        <Banner img={BannerBackground} title='Chez vous, partout et ailleurs' /> 
       </div>
