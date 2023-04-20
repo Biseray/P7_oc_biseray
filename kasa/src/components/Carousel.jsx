@@ -1,10 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import style from "../styles/carousel.module.css"
-import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-
+import arrowRight from "../../src/asset/arrow.png"
+import arrowLeft from "../../src/asset/arrowLeft.png"
 
 
 export default function Carousel({ allPictures }) {
@@ -41,10 +39,10 @@ export default function Carousel({ allPictures }) {
             <img src={allPictures[picturesIndex]} alt="" className={` ${style.posCarousel}  `} />
             <div className={`${style.posFleche} ${allPictures.length === 1 ? style.active : ""}`}>
                 <div className={style.flecheLeft}>
-                    <FontAwesomeIcon className={style.fleche} icon={faAngleLeft} onClick={handlePrevClick} />
+                     <img className={style.fleche} src={arrowLeft}  alt="" onClick={handlePrevClick} />
                 </div>
                 <div>
-                    <FontAwesomeIcon className={style.fleche} icon={faAngleRight} onClick={handleNextClick} />
+                    <img className={style.fleche} src={arrowRight} alt='' onClick={handleNextClick} />
                 </div>
 
             </div>
