@@ -67,7 +67,8 @@
 .btn {
     cursor: pointer;
     padding-right: 1em;
-    transition: all ease-in 10s;
+    width: 1em;
+
 }
 
 .list {
